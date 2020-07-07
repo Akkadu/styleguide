@@ -36,4 +36,40 @@ Best practices rules and guides for contributing to Akkadu repositories.
 
 ## Table of Contents
 
-* 
+* [JSDoc Exported Symbols](#jsdoc-exported-symbols)
+
+## JSDoc Exported Symbols
+
+> We strive for complete documentation. Every exported symbol ideally should have a documentation line.
+
+[_deno styleguide_](https://deno.land/manual/contributing/style_guide#use-jsdoc-for-exported-symbols)
+
+Documentation should be human readable and provide non-obvious descriptions to all function definitions, prioritizing intellisense understanding of each symbol.
+
+### Oneline JSDoc Comments
+
+We configure our editors to intellisense our function parameters and return values, so the description is the only consistently valuable information to add to each exported symbol.
+
+### Example
+
+_do_
+
+```js
+/** Searches an object and returns the key-val of result */
+export const objectSearch = (params) => {
+  // ...
+}
+```
+
+_don't_
+
+```js
+/**
+ * Searches an object and returns the key-val of result
+ * @param {{ ... }} params
+ * @returns {{ ... }}
+ */
+export const objectSearch = (params) => {
+  // ...
+}
+```
