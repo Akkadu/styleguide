@@ -1,4 +1,4 @@
-# [![Akkadu][akkadu-logo]][akkadu-url] Akkadu Styleguide
+# Akkadu Styleguide
 
 [![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/0)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/0)
 [![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/1)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/1)
