@@ -47,8 +47,8 @@ Best practices rules and guides for contributing to Akkadu repositories.
 
 ## Styleguides
 
-* [JavaScript](/javascript)
-  * [VueJS](/javascript/vue)
+* [JavaScript](./javascript)
+  * [VueJS](./javascript/vue)
 
 ## Roadmap
 
