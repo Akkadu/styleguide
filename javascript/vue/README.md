@@ -36,9 +36,8 @@ Best practices rules and guides for contributing to Akkadu repositories.
 
 ## Table of Contents
 
-* [Testing Components](#testing-components)
+* [Each Component Should Be Tested](#each-component-should-be-tested)
 
-## Testing Components
+## Each Component Should Be Tested
 
-- unit test all singleton components
-- integration tests on pages with e2e (puppeteer, selenium)
+If a component is a singleton (does not import any external components from within the project), then it should include a unit test file. If a component is complex, a task should be submitted in the roadmap to include an e2e integration test for it in CI.
