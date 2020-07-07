@@ -1,21 +1,37 @@
 # Akkadu Styleguide
 
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/0)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/0)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/1)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/1)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/2)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/2)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/3)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/3)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/4)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/4)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/5)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/5)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/6)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/6)
-[![](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/7)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/7)
-
+<!-- Hall of Fame -->
+[![0](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/0)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/0)
+[![1](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/1)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/1)
+[![2](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/2)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/2)
+[![3](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/3)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/3)
+[![4](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/4)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/4)
+[![5](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/5)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/5)
+[![6](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/6)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/6)
+[![7](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/images/7)](https://sourcerer.io/fame/HoukasaurusRex/Akkadu/styleguide/links/7)
+<!-- Badges -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-![Version][version-shield]
-[![Maintenance][maintenance-shield]][maintenance-url]
+[![License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- Links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Akkadu/styleguide.svg?style=flat-square
+[contributors-url]: https://github.com/Akkadu/styleguide/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/Akkadu/styleguide.svg?style=flat-square
+[issues-url]: https://github.com/Akkadu/styleguide/issues
+[forks-shield]: https://img.shields.io/github/forks/Akkadu/styleguide.svg?style=flat-square
+[forks-url]: https://github.com/Akkadu/styleguide/network/members
+[stars-shield]: https://img.shields.io/github/stars/Akkadu/styleguide.svg?style=flat-square
+[stars-url]: https://github.com/Akkadu/styleguide/stargazers
+[license-shield]: https://img.shields.io/github/license/Akkadu/styleguide.svg?style=flat-square
+[license-url]: https://github.com/Akkadu/styleguide/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/company/akkadu/
+[fossa-shield]: https://app.fossa.com/api/projects/git%2Bgithub.com%2FAkkadu%2Fstyleguide.svg?type=shield
+[fossa-url]: https://app.fossa.com/projects/git%2Bgithub.com%2FAkkadu%2Fstyleguide?ref=badge_shield
+[fossa-scan]: https://app.fossa.com/api/projects/git%2Bgithub.com%2FAkkadu%2Fstyleguide.svg?type=large
 
 Best practices rules and guides for contributing to Akkadu repositories.
 
@@ -54,24 +70,3 @@ Want to make a change? Please review the [contributing guidelines](/.github/cont
 * [Airbnb JS Styleguide](https://github.com/airbnb/javascript)
 * [NPM JS Styleguide](https://docs.npmjs.com/misc/coding-style)
 * [Standard JS Styleguide](https://github.com/standard/standard)
-
-[akkadu-logo]: https://res.cloudinary.com/jthouk/image/upload/e_improve,w_30,h_30/v1570345513/Logos/akkadu-logo-white-simple.png
-[akkadu-url]: https://akkadu.com
-[contributors-shield]: https://img.shields.io/github/contributors/Akkadu/styleguide.svg?style=flat-square
-[contributors-url]: https://github.com/Akkadu/styleguide/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Akkadu/styleguide.svg?style=flat-square
-[forks-url]: https://github.com/Akkadu/styleguide/network/members
-[stars-shield]: https://img.shields.io/github/stars/Akkadu/styleguide.svg?style=flat-square
-[stars-url]: https://github.com/Akkadu/styleguide/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Akkadu/styleguide.svg?style=flat-square
-[issues-url]: https://github.com/Akkadu/styleguide/issues
-[license-shield]: https://img.shields.io/github/license/Akkadu/styleguide.svg?style=flat-square
-[license-url]: https://github.com/Akkadu/styleguide/blob/master/LICENSE.txt
-[fossa-shield]: https://app.fossa.com/api/projects/git%2Bgithub.com%2FAkkadu%2Fstyleguide.svg?type=shield
-[fossa-url]: https://app.fossa.com/projects/git%2Bgithub.com%2FAkkadu%2Fstyleguide?ref=badge_shield
-[fossa-scan]: https://app.fossa.com/api/projects/git%2Bgithub.com%2FAkkadu%2Fstyleguide.svg?type=large
-[version-shield]: https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000
-[maintenance-shield]: https://img.shields.io/badge/Maintained%3F-yes-green.svg
-[maintenance-url]: https://github.com/Akkadu/styleguide/graphs/commit-activity
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/company/akkadu/
