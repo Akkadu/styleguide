@@ -43,7 +43,6 @@ Best practices rules and guides for contributing to Akkadu repositories.
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
-* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
 ## Styleguides
