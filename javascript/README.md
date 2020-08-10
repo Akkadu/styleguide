@@ -50,7 +50,7 @@ Documentation should be human readable and provide non-obvious descriptions to a
 
 We configure our editors to intellisense our function parameters and return values, so the description is the only consistently valuable information to add to each exported symbol.
 
-### Example
+### Examples
 
 _do_
 
@@ -59,7 +59,42 @@ _do_
 export const objectSearch = (params) => {
   // ...
 }
+
+// this will define the right type in intellisense, also 0 is falsy, also also we don't have items with id=0 in the database
+// numbering starts at 1
+
+/** Does a thing **/
+export const paramsWithDefaultVars = (paramEventId=0, paramVideoId=0) =>{
+  // ...
+}
+
+// you can define default variables a destructure them in the call
+// this will lead to an error however if called without a object variable
+
+/** Does another thing **/
+const objectConfigWithDefaults = ({myBool=false, myString='', myNum=0})=>{
+ console.log(myBool)
+ console.log(myString)
+ console.log(!!myString)
+ console.log(myNum)
+ console.log(!!myNum)
+}
+
+// a way to prevent this would be to do 
+
+/** Does another other thing **/
+const myFuncNoObject = (config={})=>{
+ const {myBool=false, myString='', myNum=0} = config
+ console.log(myBool)
+ console.log(myString)
+ console.log(!!myString)
+ console.log(myNum)
+ console.log(!!myNum)
+}
+
+
 ```
+
 
 _don't_
 
