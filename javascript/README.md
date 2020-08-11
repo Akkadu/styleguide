@@ -118,7 +118,7 @@ const myFuncNoObject = (config = {})=>{
  console.log(!!myString)
  console.log(myNum)
  console.log(!!myNum)
- callback()
+ myCallback()
 }
 ```
 
