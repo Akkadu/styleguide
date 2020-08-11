@@ -74,10 +74,13 @@ export const objectSearch = (params) => {
 }
 ```
 
-### Variable type declaration
+### Variable type declarations
 
 We should strive to document types of our variables, this makes using the code easier, especially by
 those who have not written it. Type declarations created inline will be picked up by intellisense.
+When reading this, remember that
+- 0 and empty string '' equal to falsy
+- We don't store information with index 0 in the database, no data will be queried with zero
 
 _do_
 
