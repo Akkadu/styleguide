@@ -50,7 +50,7 @@ Documentation should be human readable and provide non-obvious descriptions to a
 
 We configure our editors to intellisense our function parameters and return values, so the description is the only consistently valuable information to add to each exported symbol.
 
-### Example
+### Examples
 
 _do_
 
@@ -70,6 +70,67 @@ _don't_
  * @returns {{ ... }}
  */
 export const objectSearch = (params) => {
+  // ...
+}
+```
+
+### Variable type declarations
+
+We should strive to document types of our variables, this makes using the code easier, especially by
+those who have not written it. Type declarations created inline will be picked up by intellisense.
+When reading this, remember that
+- 0 and empty string '' equal to falsy
+- We don't store information with index 0 in the database, no data will be queried with zero
+
+_do_
+
+```js
+
+// this will define the right types in intellisense, remember that 0 and empty string are falsy.
+// In addition we don't have items with id=0 in the database because numbering starts at 1.
+
+/** Does a thing **/
+export const paramsWithDefaultVars = (paramEventId = 0, paramVideoId = 0) =>{
+  // ...
+}
+
+// You can define default variables a destructure them in the call.
+// This will lead to an error however if called without a object variable.
+// Calling the empty default callback is always safe.
+
+/** Does another thing **/
+const objectConfigWithDefaults = ({ myBool = false, myString = '', myNum = 0, myCallback = ()=>{} })=>{
+ console.log(myBool)
+ console.log(myString)
+ console.log(!!myString)
+ console.log(myNum)
+ console.log(!!myNum)
+ myCallback()
+}
+
+// a way to prevent this would be to do 
+
+/** Does another other thing **/
+const myFuncNoObject = (config = {})=>{
+ const { myBool = false, myString = '', myNum = 0, myCallback = ()=>{} } = config
+ console.log(myBool)
+ console.log(myString)
+ console.log(!!myString)
+ console.log(myNum)
+ console.log(!!myNum)
+ myCallback()
+}
+```
+
+_don't_
+
+```js
+/**
+ * Does a thingaling
+ * @param {{ myBool:boolean, myString:string, myNum:number }} params
+ * @returns {{ ... }}
+ */
+export const doAThing = ({ myBool, myString, myNum }) => {
   // ...
 }
 ```
