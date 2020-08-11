@@ -59,42 +59,7 @@ _do_
 export const objectSearch = (params) => {
   // ...
 }
-
-// this will define the right type in intellisense, also 0 is falsy, also also we don't have items with id=0 in the database
-// numbering starts at 1
-
-/** Does a thing **/
-export const paramsWithDefaultVars = (paramEventId=0, paramVideoId=0) =>{
-  // ...
-}
-
-// you can define default variables a destructure them in the call
-// this will lead to an error however if called without a object variable
-
-/** Does another thing **/
-const objectConfigWithDefaults = ({myBool=false, myString='', myNum=0})=>{
- console.log(myBool)
- console.log(myString)
- console.log(!!myString)
- console.log(myNum)
- console.log(!!myNum)
-}
-
-// a way to prevent this would be to do 
-
-/** Does another other thing **/
-const myFuncNoObject = (config={})=>{
- const {myBool=false, myString='', myNum=0} = config
- console.log(myBool)
- console.log(myString)
- console.log(!!myString)
- console.log(myNum)
- console.log(!!myNum)
-}
-
-
 ```
-
 
 _don't_
 
@@ -105,6 +70,64 @@ _don't_
  * @returns {{ ... }}
  */
 export const objectSearch = (params) => {
+  // ...
+}
+```
+
+### Variable type declaration
+
+We should strive to document types of our variables, this makes using the code easier, especially by
+those who have not written it. Type declarations created inline will be picked up by intellisense.
+
+_do_
+
+```js
+
+// this will define the right types in intellisense, remember that 0 and empty string are falsy.
+// In addition we don't have items with id=0 in the database because numbering starts at 1.
+
+/** Does a thing **/
+export const paramsWithDefaultVars = (paramEventId = 0, paramVideoId = 0) =>{
+  // ...
+}
+
+// You can define default variables a destructure them in the call.
+// This will lead to an error however if called without a object variable.
+// Calling the empty default callback is always safe.
+
+/** Does another thing **/
+const objectConfigWithDefaults = ({ myBool = false, myString = '', myNum = 0, myCallback = ()=>{} })=>{
+ console.log(myBool)
+ console.log(myString)
+ console.log(!!myString)
+ console.log(myNum)
+ console.log(!!myNum)
+ myCallback()
+}
+
+// a way to prevent this would be to do 
+
+/** Does another other thing **/
+const myFuncNoObject = (config = {})=>{
+ const { myBool = false, myString = '', myNum = 0, myCallback = ()=>{} } = config
+ console.log(myBool)
+ console.log(myString)
+ console.log(!!myString)
+ console.log(myNum)
+ console.log(!!myNum)
+ callback()
+}
+```
+
+_don't_
+
+```js
+/**
+ * Does a thingaling
+ * @param {{ myBool:boolean, myString:string, myNum:number }} params
+ * @returns {{ ... }}
+ */
+export const doAThing = ({ myBool, myString, myNum }) => {
   // ...
 }
 ```
